@@ -18,11 +18,15 @@ app.listen(process.env.PORT || 3000, function () {
 
 app.use('/', function a(req, res){
 
+    console.log("aquiiiiiiiiiiiiiiiiiiiiiii ", req.body)
+
     clienteModel.find({})
     .then(result => {
         res.json(result)
     })
 
-    console.log(req.body)
     //res.json("ok passo")
 });
+
+
+//heroku logs --tail --app api-rest-test123
