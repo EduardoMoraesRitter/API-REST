@@ -1,1 +1,1 @@
-web: npm liga
+web: npm start
